@@ -87,7 +87,7 @@ public class Starter {
             System.out.println(q.getFunName());
         }
 
-        String res = "1" == "2" ? "+" : "-";
+        String res = "1".equals("2") ? "+" : "-";
         System.out.println(res);
 
 
