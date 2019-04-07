@@ -1,8 +1,10 @@
 package main_pack;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class Starter {
 
@@ -88,7 +90,25 @@ public class Starter {
         String res = "1" == "2" ? "+" : "-";
         System.out.println(res);
 
+
+        try {
+            Connection con = DriverManager.getConnection(
+                    "jdbc:oracle:thin:@localhost:1521:XE", "iizergin", "iizergin");
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("select 1 from dual");
+            while (rs.next())
+                System.out.println(rs.getInt(1));
+            con.close();
+
+        } catch (Exception e) {
+            System.out.println("err " + e);
+        }
+
+
+
     }
+
+
 }
 
 

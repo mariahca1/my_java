@@ -17,11 +17,7 @@
                     <target>8</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>com.oracle</groupId>
-                <artifactId>ojdbc14</artifactId>
-                <version>10.2.0.3.0</version>
-            </plugin>
+
         </plugins>
     </build>
 
@@ -29,7 +25,15 @@
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
   </properties>
-  
 
-	
+    <dependencies>
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>jdbc</artifactId>
+            <version>14</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/ojdbc8.jar</systemPath> <!-- must match file name -->
+        </dependency>
+    </dependencies>
+
 </project>
