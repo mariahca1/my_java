@@ -1,3 +1,4 @@
+package main_pack;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,22 +11,22 @@ public class Starter {
 
 
 /*
-        Building my_house = new Building(10);
+        main_pack.Building my_house = new main_pack.Building(10);
         System.out.println(my_house.get_height());
         System.out.println(my_house.get_color());
         System.out.println(my_house.toString());*/
 /*
-        Building[] my_house_arr = new Building[5];
+        main_pack.Building[] my_house_arr = new main_pack.Building[5];
 
-        my_house_arr[0] = new Building(4);
-        my_house_arr[1] = new Building(1);
-        my_house_arr[2] = new Building(5);
-        my_house_arr[3] = new Building(3);
-        my_house_arr[4] = new Building(2);
+        my_house_arr[0] = new main_pack.Building(4);
+        my_house_arr[1] = new main_pack.Building(1);
+        my_house_arr[2] = new main_pack.Building(5);
+        my_house_arr[3] = new main_pack.Building(3);
+        my_house_arr[4] = new main_pack.Building(2);
 
 
-        for (Building q : my_house_arr) {
-          //  q = new Building(1);
+        for (main_pack.Building q : my_house_arr) {
+          //  q = new main_pack.Building(1);
             System.out.println(q.toString());
         }
         int[] int_arr = new int[3];
@@ -36,7 +37,7 @@ public class Starter {
 
 
 /*
-        AptBuilding my_AptBuilding = new AptBuilding(10,40);
+        main_pack.AptBuilding my_AptBuilding = new main_pack.AptBuilding(10,40);
         //my_AptBuilding.Set_Apt_number(40);
         System.out.println(my_AptBuilding.get_height());
         System.out.println(my_AptBuilding.get_color());
@@ -44,24 +45,24 @@ public class Starter {
 */
 
 /*
-        Thing t = new Building(2);
+        Thing t = new main_pack.Building(2);
         System.out.println(t.toString());
 
-        Building b = new AptBuilding(3,3);
+        main_pack.Building b = new main_pack.AptBuilding(3,3);
         System.out.println(b.toString());
 
 */
 
 
 
-        /*ArrayList<Building> arr = new ArrayList();
-        arr.add(new Building(1));
-        arr.add(new Building(3));
-        arr.add(new Building(2));
+        /*ArrayList<main_pack.Building> arr = new ArrayList();
+        arr.add(new main_pack.Building(1));
+        arr.add(new main_pack.Building(3));
+        arr.add(new main_pack.Building(2));
         System.out.println(arr);
-        arr.sort(new Comparator<Building>() {
+        arr.sort(new Comparator<main_pack.Building>() {
             @Override
-            public int compare(Building o1, Building o2) {
+            public int compare(main_pack.Building o1, main_pack.Building o2) {
                 return o1.getHeight() - o2.getHeight();
             }
         });
@@ -74,12 +75,12 @@ public class Starter {
         b_arr[2] = new Building(2);
 
         for (Building q : b_arr) {
-            //  q = new Building(1);
+            //  q = new main_pack.Building(1);
             System.out.println(q.toString());
         }
         Arrays.sort(b_arr);
         for (Building q : b_arr) {
-            //  q = new Building(1);
+            //  q = new main_pack.Building(1);
             System.out.println(q.toString());
             System.out.println(q.getFunName());
         }

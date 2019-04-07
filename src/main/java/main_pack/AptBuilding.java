@@ -1,4 +1,8 @@
-public class AptBuilding extends Building  {
+package main_pack;
+
+import main_pack.Building;
+
+public class AptBuilding extends Building {
     private int aptNumber;
 
     public AptBuilding(int i_Height, int i_AptNumber) {
@@ -11,10 +15,10 @@ public class AptBuilding extends Building  {
         return "Apt_" + super.getColor();
     }
 
-
+/*
     public void setAptNumber(int aptNumber) {
         aptNumber = aptNumber;
-    }
+    }*/
 
     public int getAptNumber() {
         return aptNumber;
@@ -22,7 +26,7 @@ public class AptBuilding extends Building  {
 
     @Override
     public String toString() {
-        return "AptBuilding{" +
+        return "main_pack.AptBuilding{" +
                 "AptNumber=" + aptNumber +
                 '}';
     }

@@ -1,10 +1,14 @@
+package main_pack;
+
+import abstract_pack.Funny;
+import abstract_pack.Thing;
+
 public class Building extends Thing implements Comparable, Funny {
     private int height;
     private String color;
 
     //public void sort();
-
-    public Building(int height) {
+     Building(int height) {
         this.height = height;
         this.color = "Gray";
     }

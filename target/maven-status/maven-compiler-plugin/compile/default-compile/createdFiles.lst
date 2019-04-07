@@ -1,1 +1,5 @@
-Starter.class
+abstract_pack\Thing.class
+main_pack\Starter.class
+abstract_pack\Funny.class
+main_pack\AptBuilding.class
+main_pack\Building.class

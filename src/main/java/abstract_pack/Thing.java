@@ -1,3 +1,5 @@
+package abstract_pack;
+
 public abstract class Thing {
     /*private int Height;
     public Thing(int i_Height) {
