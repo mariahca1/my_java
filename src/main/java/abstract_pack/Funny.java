@@ -2,6 +2,6 @@ package abstract_pack;
 
 public interface Funny {
     default String getFunName(){
-        return "funny_default1";
+        return "funny_default2";
     }
 }
