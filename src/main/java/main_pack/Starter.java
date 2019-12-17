@@ -1,10 +1,15 @@
 package main_pack;
 
+import sql_pack.MySqlClass;
+
+import javax.swing.*;
+import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Arrays;
+
 
 public class Starter {
 
@@ -87,10 +92,10 @@ public class Starter {
             System.out.println(q.getFunName());
         }
 
-        String res = "1" == "2" ? "+" : "-";
+        String res = "1".equals("2") ? "+" : "-";
         System.out.println(res);
 
-
+/*
         try {
             Connection con = DriverManager.getConnection(
                     "jdbc:oracle:thin:@localhost:1521:XE", "iizergin", "iizergin");
@@ -104,7 +109,17 @@ public class Starter {
             System.out.println("err " + e);
         }
 
+*/
+        MySqlClass sql = new MySqlClass();
+        sql.getDbSysdate();
 
+/*
+        ActionListener listener = new MySqlClass();
+        Timer t = new Timer(5000, listener);
+        t.start();
+
+        JOptionPane.showMessageDialog(null,"Quit?");
+        System.exit(0);*/
 
     }
 
